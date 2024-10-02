@@ -1,2 +1,14 @@
-dspy==2.5.3
-toml==0.10.2
+langchain==0.1.16
+langchain-aws==0.1.2
+langchain-cohere==0.1.5
+langchain-community==0.0.34
+langchain-core==0.1.46
+langchain-openai==0.0.2.post1
+langchain-text-splitters==0.0.1
+json5 @ file:///tmp/build/80754af9/json5_1624432770122/work
+jsonpatch @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_3ajyoz8zoj/croot/jsonpatch_1714483362270/work
+jsonpointer==2.1
+jsonref==1.1.0
+jsonschema @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/jsonschema_1701803145350/work
+jsonschema-specifications @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/jsonschema-specifications_1701803122948/work
+boto3==1.34.84
