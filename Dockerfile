@@ -1,9 +1,5 @@
-FROM python:${python_version}
-
-WORKDIR /app
-
-COPY ${work_directory} .
-
-RUN pip install -r requirements.txt
-
-CMD ["streamlit", "run", "${entrypoint_filename}"]
+FROM python:3.11
+WORKDIR /src
+COPY . /src
+RUN pip install --no-cache-dir streamlit
+CMD ["streamlit", "run", "app.py"]
