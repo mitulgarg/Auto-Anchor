@@ -2,6 +2,7 @@ import sys
 import dspy
 import toml
 import os
+import langchain
 
 # print(sys.prefix)
 # print(sys.path[0])

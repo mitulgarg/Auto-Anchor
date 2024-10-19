@@ -10,10 +10,13 @@ def FindImport(file_path):                                  # To get Initial imp
         first_lines=[]
 
         for line in file:
-                if 'import' in line:
-                    first_lines.append(line.strip()[7:])    #only keep library name in list (remove 'import ')
-                else: 
-                    break 
+            line = line.strip()  # Remove leading/trailing spaces
+
+            if line.startswith('import'):
+                first_lines.append(line.split()[1])    # Only keep the library name in the list 
+
+            elif line.startswith('from'):
+                first_lines.append(line.split()[1])
 
     return first_lines
 
@@ -54,3 +57,4 @@ print(FindreqLibraries(req,file_path))           # To see library list
 
 changereqfile(req2,req,file_path)                # To make final changes in requirements2.txt
 
+print(FindImport(file_path))
